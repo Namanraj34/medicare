@@ -1,0 +1,372 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: rgb(233, 235, 236);
+}
+
+h1,h2,h3,h4,h5,h6,p,a,button{
+  font-family: "Playfair Display",serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  height: 80px;
+  width: 100%;
+  background-color: rgb(247, 248, 248);
+}
+label#logo{
+  font-size: 35px;
+  line-height: 80px;
+  padding:  50px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: cornflowerblue;
+}
+/* a.active,a:hover{
+  background: #5d5d5e;
+  transition: .5s;
+  color: black;
+} */
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label#logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 235, 236);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/* banner-first start */
+.banner-first{
+  width: 100%;
+  max-height: auto;
+}
+.banner-first h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Playfair Display",serif;
+  margin-bottom: 30px;
+  margin-top: 200px;
+}
+
+.banner-btn button, .btn2{
+border: none;
+border-radius: 5px;
+background-color: cornflowerblue;
+color: white;
+margin: 20px;
+padding: 10px;
+}
+
+.banner-btn button:hover{
+background-color: rgb(231, 234, 240);
+color: black;
+}
+
+@media (max-width:768px){
+  .banner-first h1 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 350;
+    font-family: "Playfair Display",serif;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+}
+
+/* banner section close */
+
+/* card section start */
+
+.card-section{
+  background-image: url(banner-2-image.webp);
+}
+
+.card-section .card{
+  margin-top: 2rem;
+  /* margin-left: 1rem; */
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card p{
+  text-align: start;
+}
+
+#card-images-se{
+  padding: 20px;
+  height: 300px;
+}
+
+.card-img{
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* card section end */
+
+/* heading-cards start */
+
+
+.card-png{
+  padding: 2rem;
+  margin-top: 1rem;
+  background-color: rgb(241, 240, 238);
+}
+
+.cards a{
+  color: #5d5d5e;
+}
+/* heading-cards end */
+
+
+/* hero section start */
+.hero-section{
+  background-image: url(hero-background.webp);
+  margin-top: 1rem;
+}
+
+.hero-img img{
+  width: auto;
+  max-width: 600px;
+  height: 500px;
+}
+
+/* hero section end */
+
+/* card images start */
+
+.img-fluid{
+  margin-top: 0.2rem;
+}
+
+#social-set{
+  margin-left: 3rem;
+  padding-bottom: 11px;
+}
+.linerr{
+  color: #5d5d5e;
+  text-decoration: none;
+}
+
+/* card image end */
+
+/* question form section start */
+
+.question-form{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.formfill{
+  background-color: rgb(241, 240, 238);
+  padding: 20px;
+  margin-top: 37px;
+}
+
+.btn3{
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn3:hover{
+  background-color: rgb(231, 234, 240);
+  color: black;
+  }
+
+/* swiper section start  */
+
+.testemonial-first-section {
+  background: #f7f7f7;
+  background-image: url(https://preview.colorlib.com/theme/medcare/img/background/xbg_2.png.pagespeed.ic.EmIxYqMVWJ.png);
+  background-size: cover;
+  position: relative;
+}
+
+.card1{
+  
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.slider .card1 .img{
+  height: 100px;
+  width: 100px;
+  clip-path: circle(); 
+}
+
+/* swiper section end */
+
+/* contact number section */
+
+.contact-number{
+  background-image: url(contact-image.webp);
+  margin-bottom: 3rem;
+}
+
+.contnum{
+  color: white;
+  padding: 4rem;
+  text-align: center;
+}
+
+.contnum span{
+  font-size: 4rem; 
+  font-weight: 500;
+}
+
+#card-detail{
+  margin: 1rem;
+  padding: 20px;
+}
+
+#card-detail:hover img {
+   transform: scale(1.1); 
+  }
+
+@media(max-width:768px){
+  .contnum{
+    color: white;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .hero-img img{
+    width: auto;
+    max-width: 300px;
+    height: 300px;
+  }
+}
+
+@media(max-width:600px){
+  .contnum{
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .contnum span{
+    font-size: 2rem; 
+    font-weight: 250;
+  }
+}
+/* contact number section end */
+
+/* lil swipper slider start */
+
+/* #immg{
+  height: 30px;
+  width: 100px;
+}
+
+#immg:hover{
+  background-color: rgb(194, 190, 190);
+}
+
+#swippper{
+  margin-top: 4rem;
+  
+  margin-bottom: 4rem;
+} */
+
+/* footer section */
+
+.footer{
+  margin-bottom: 0.1rem;
+  background-color: rgb(247, 248, 248);
+}
+.icon-button{
+  border-color: cornflowerblue;
+background-color: cornflowerblue;
+color: white;
+margin: 10px;
+padding: 5px;
+}
+
+.foot ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.foot ul li a:hover{
+  color: cornflowerblue;
+}
